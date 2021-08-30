@@ -4999,8 +4999,11 @@ __webpack_require__.r(__webpack_exports__);
           key: 'writer'
         }, {
           title: 'Uploaded by',
-          type: 'text',
-          key: 'upload_by'
+          type: 'custom-html',
+          key: 'upload_by',
+          modifier: function modifier(key, row) {
+            return row.uploader.name;
+          }
         }, {
           title: 'Views',
           type: 'text',
@@ -45464,7 +45467,7 @@ var render = function() {
       "div",
       {
         staticClass:
-          "card-img-top book-card-image d-flex justify-content-center align-content-center"
+          "card-img-top book-card-image d-flex justify-content-center align-content-center overflow-hidden"
       },
       [
         _c("div", { staticClass: "align-self-center" }, [

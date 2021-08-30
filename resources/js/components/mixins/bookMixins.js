@@ -25,8 +25,9 @@ export default {
                     },
                     {
                         title: 'Uploaded by',
-                        type: 'text',
+                        type: 'custom-html',
                         key: 'upload_by',
+                        modifier: (key, row) => row.uploader.name
                     },
                     {
                         title: 'Views',

@@ -1,6 +1,6 @@
 <template>
     <div class="card">
-        <div class="card-img-top book-card-image d-flex justify-content-center align-content-center">
+        <div class="card-img-top book-card-image d-flex justify-content-center align-content-center overflow-hidden">
             <div class="align-self-center">
                 <img :src="book.images.length ? urlGenerator(book.images[0].path) : ''" alt="Card image cap">
             </div>
